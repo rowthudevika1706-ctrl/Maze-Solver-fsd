@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #fceaff, #dbe8ff);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  margin: 20px;
+}
+
+.title {
+  color: #6b4c9a;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #c5a3f0;
+  background-color: #e8d9fb;
+  color: #4d3c73;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: #d7c1f6;
+}
+
+.controls {
+  margin-bottom: 30px;
+}
+
+.maze-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.maze-preview-box {
+  width: 480px;
+  max-width: 100%;
+  background: linear-gradient(145deg, #ffccff, #cce5ff);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.maze-preview canvas, .maze-solved canvas {
+  width: 100%;
+  max-height: 450px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  object-fit: contain;
+  image-rendering: auto;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+#uploaded-maze, #solved-maze-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maze-images.solved {
+  justify-content: center;
+  align-items: center;
+}
+
+.maze-images.solved #uploaded-maze {
+  order: 1;
+}
+
+.maze-images.solved #solved-maze-container {
+  order: 2;
+}
+
+.show {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.maze-preview-box h3 {
+  color: #6b4c9a;
+  margin-bottom: 15px;
+}
